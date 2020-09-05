@@ -1,0 +1,32 @@
+@import url(bootstrap.css);
+@import url(stylesheet__fonts.css);
+.program {
+  font-size: 30px;
+  font-variant: all-small-caps;
+  font-weight: bold;
+  font-family: "Myriad Pro"; }
+
+.diff_bg {
+  margin-bottom: 10px; }
+  .diff_bg:nth-of-type(odd) {
+    background-color: black; }
+  .diff_bg:nth-of-type(even) {
+    background-color: #c4c4c4; }
+
+.time_program span {
+  color: white;
+  font-variant: all-small-caps; }
+  .time_program span:first-of-type {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Myriad Pro";
+    padding-right: 45px; }
+  .time_program span:last-of-type {
+    font-size: 18px;
+    font-family: 'Oswald'; }
+
+.time_discr .time_discr__photo {
+  height: 100%;
+  background-color: black; }
+
+/*# sourceMappingURL=style.css.map */

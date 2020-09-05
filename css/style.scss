@@ -1,0 +1,41 @@
+@import "bootstrap.css";
+@import "stylesheet__fonts.css";
+
+
+.program{
+  font-size: 30px;
+  font-variant: all-small-caps;
+  font-weight: bold;
+  font-family: "Myriad Pro";
+}
+.diff_bg{
+  margin-bottom: 10px;
+  &:nth-of-type(odd){
+    background-color: black;
+  }
+  &:nth-of-type(even){
+    background-color: #c4c4c4;
+  }
+}
+.time_program{
+  span{
+    color: white;
+    font-variant: all-small-caps;
+    &:first-of-type{
+      font-size: 48px;
+      font-weight: bold;
+      font-family: "Myriad Pro";
+      padding-right: 45px;
+    }
+    &:last-of-type{
+      font-size: 18px;
+      font-family: 'Oswald';
+    }
+  }
+}
+.time_discr{
+  .time_discr__photo{
+    height: 100%;
+    background-color: black;
+  }
+}
