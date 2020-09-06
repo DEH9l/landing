@@ -25,8 +25,28 @@
     font-size: 18px;
     font-family: 'Oswald'; }
 
-.time_discr .time_discr__photo {
-  height: 100%;
+.timetable__photo {
+  height: 185px;
   background-color: black; }
+.timetable__time {
+  font-family: "Myriad Pro";
+  font-size: 40px;
+  font-weight: bold; }
+.timetable__name p {
+  font-family: "Oswald";
+  font-weight: bold; }
+  .timetable__name p:first-of-type {
+    font-size: 24px; }
+  .timetable__name p:last-of-type {
+    font-size: 18px; }
+
+.after_lunch {
+  display: flex;
+  justify-content: center; }
+  .after_lunch .after_lunch__header {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: "Myriad Pro";
+    font-variant: all-small-caps; }
 
 /*# sourceMappingURL=style.css.map */
