@@ -58,12 +58,73 @@
   }
 }
 .after_lunch{
-  display: flex;
-  justify-content: center;
-  .after_lunch__header{
+  &__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__rank {
     font-size: 34px;
     font-weight: bold;
     font-family: "Myriad Pro";
     font-variant: all-small-caps;
+    line-height: 2rem;
+  }
+}
+  .after_lunch__line{
+    position: relative;
+    div {
+      &:before {
+        display: inline-block;
+        width: 80%;
+        height: 1px;
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+      }
+    }
+  }
+  p{
+    font-family: "Oswald";
+    margin-bottom: 0;
+  }
+   .after_lunch__photos {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+
+     .after_lunch__item__time {
+       font-family: "Myriad Pro";
+       font-size: 24px;
+       font-weight: bold;
+     }
+
+     .after_lunch__item__photo {
+       background-color: black;
+       height: 180px;
+     }
+
+
+   }
+}
+.after_lunch__item__disc{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-family: "Oswald";
+    font-weight: lighter;
+
+    &:first-of-type {
+      font-size: 24px;
+      font-weight: bolder;
+    }
+
+    &:last-of-type {
+      font-size: 18px;
+    }
   }
 }
