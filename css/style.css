@@ -29,8 +29,9 @@ section {
     font-family: 'Oswald'; }
 
 .timetable__photo {
-  height: 185px;
-  background-color: black; }
+  background-color: black;
+  width: 250px;
+  height: 250px; }
 .timetable__time {
   font-family: "Myriad Pro";
   font-size: 40px;
@@ -57,13 +58,13 @@ section {
   position: relative; }
   .after_lunch .after_lunch__line div:before {
     display: inline-block;
-    width: 80%;
+    width: 75%;
     height: 1px;
     content: "";
     background-color: black;
     position: absolute;
     top: 50%;
-    left: 10%; }
+    left: 15%; }
 .after_lunch p {
   font-family: "Oswald";
   margin-bottom: 0; }
@@ -78,7 +79,8 @@ section {
     font-weight: bold; }
   .after_lunch .after_lunch__photos .after_lunch__item__photo {
     background-color: black;
-    height: 180px; }
+    width: 170px;
+    height: 170px; }
 
 .after_lunch__item__disc {
   display: flex;
@@ -106,5 +108,29 @@ section {
     .time_18__text p:first-of-type {
       font-size: 18px;
       font-weight: bolder; }
+
+@media screen and (min-width: 768px) {
+  .after_lunch .after_lunch__photos .after_lunch__item__photo {
+    width: 200px;
+    height: 200px; } }
+@media screen and (min-width: 576px) {
+  .after_lunch .after_lunch__photos .after_lunch__item__photo {
+    width: 160px;
+    height: 160px; } }
+@media screen and (max-width: 576px) {
+  .after_lunch .after_lunch__photos .after_lunch__item__photo {
+    width: 50px;
+    height: 50px; }
+
+  .timetable__photo {
+    width: 100px;
+    height: 100px; }
+
+  .timetable__time {
+    font-size: 24px;
+    margin-top: 5px; }
+
+  .after_lunch__line div:before {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
