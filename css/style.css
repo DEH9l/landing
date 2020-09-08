@@ -1,5 +1,8 @@
 @import url(bootstrap.css);
 @import url(stylesheet__fonts.css);
+section {
+  padding: 500px 0; }
+
 .program {
   font-size: 30px;
   font-variant: all-small-caps;
@@ -33,10 +36,10 @@
   font-size: 40px;
   font-weight: bold; }
 .timetable__name p {
-  font-family: "Oswald";
-  font-weight: bold; }
+  font-family: "Oswald"; }
   .timetable__name p:first-of-type {
-    font-size: 24px; }
+    font-size: 24px;
+    font-weight: bolder; }
   .timetable__name p:last-of-type {
     font-size: 18px; }
 
@@ -81,7 +84,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: start; }
   .after_lunch__item__disc p {
     font-family: "Oswald";
     font-weight: lighter; }
@@ -90,5 +93,18 @@
       font-weight: bolder; }
     .after_lunch__item__disc p:last-of-type {
       font-size: 18px; }
+
+.time_18 {
+  display: flex;
+  flex-direction: row; }
+  .time_18__time {
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    font-size: 40px; }
+  .time_18__text {
+    font-family: 'Oswald'; }
+    .time_18__text p:first-of-type {
+      font-size: 18px;
+      font-weight: bolder; }
 
 /*# sourceMappingURL=style.css.map */

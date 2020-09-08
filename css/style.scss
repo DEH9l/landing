@@ -2,6 +2,9 @@
 @import "stylesheet__fonts.css";
 
 
+section{
+  padding: 500px 0;
+}
 .program{
   font-size: 30px;
   font-variant: all-small-caps;
@@ -47,9 +50,9 @@
   &__name{
     p{
       font-family: "Oswald";
-      font-weight: bold;
       &:first-of-type{
         font-size: 24px;
+        font-weight: bolder;
       }
       &:last-of-type{
         font-size: 18px;
@@ -113,7 +116,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   p {
     font-family: "Oswald";
     font-weight: lighter;
@@ -125,6 +128,24 @@
 
     &:last-of-type {
       font-size: 18px;
+    }
+  }
+}
+.time_18{
+ display: flex;
+  flex-direction: row;
+  &__time{
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    font-size: 40px;
+  }
+  &__text{
+    font-family: 'Oswald';
+    p{
+      &:first-of-type{
+        font-size:18px;
+        font-weight: bolder;
+      }
     }
   }
 }

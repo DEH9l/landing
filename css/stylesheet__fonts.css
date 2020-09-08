@@ -1,25 +1,25 @@
 @font-face {
-    font-family: 'Myriad Pro';
-    src: url('MyriadPro-Bold.eot');
-    src: url('MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
-    url('MyriadPro-Bold.woff2') format('woff2'),
-    url('MyriadPro-Bold.woff') format('woff'),
-    url('MyriadPro-Bold.ttf') format('truetype'),
-    url('MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
-    font-weight: bold;
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.eot');
+    src: url('../fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular.woff') format('woff'),
+        url('../fonts/Oswald-Regular.ttf') format('truetype'),
+        url('../fonts/Oswald-Regular.svg#Oswald-Regular') format('svg');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Oswald';
-    src: url('Oswald-Regular.eot');
-    src: url('Oswald-Regular.eot?#iefix') format('embedded-opentype'),
-    url('Oswald-Regular.woff2') format('woff2'),
-    url('Oswald-Regular.woff') format('woff'),
-    url('Oswald-Regular.ttf') format('truetype'),
-    url('Oswald-Regular.svg#Oswald-Regular') format('svg');
-    font-weight: normal;
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Bold.eot');
+    src: url('../fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MyriadPro-Bold.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Bold.woff') format('woff'),
+        url('../fonts/MyriadPro-Bold.ttf') format('truetype'),
+        url('../fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
