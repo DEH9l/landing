@@ -4,6 +4,10 @@
 
 section{
   padding: 500px 0;
+  @media screen and(max-width: 768px){
+    padding: 100px 0;
+
+  }
 }
 .program{
   font-size: 30px;
@@ -42,6 +46,14 @@ section{
     background-color: black;
     width: 250px;
     height: 250px;
+    @media screen and (max-width: 768px){
+      width: 200px;
+      height: 200px;
+    }
+    @media screen and (max-width: 576px){
+      width: 150px;
+      height: 150px;
+    }
   }
   &__time{
     font-family: "Myriad Pro";
@@ -51,6 +63,11 @@ section{
   &__name{
     p{
       font-family: "Oswald";
+      @media screen and(max-width: 576px){
+        word-wrap: break-word;
+        box-sizing: border-box;
+        display: block;
+      }
       &:first-of-type{
         font-size: 24px;
         font-weight: bolder;
@@ -62,10 +79,21 @@ section{
   }
 }
 .after_lunch{
+  @media screen and(max-width: 576px){
+    word-wrap: break-word;
+    box-sizing: border-box;
+  }
   &__header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  div{
+    &:first-of-type{
+      @media screen and(max-width: 576px){
+        display: none;
+      }
+    }
+  }
     &__rank {
     font-size: 34px;
     font-weight: bold;
@@ -79,16 +107,20 @@ section{
     div {
       &:before {
         display: inline-block;
-        width: 75%;
+        width: 70%;
         height: 1px;
         content: "";
         background-color: black;
         position: absolute;
         top: 50%;
-        left: 15%;
+        left: 12%;
+        @media screen and(max-width: 768px){
+          display: none;
+        }
       }
     }
   }
+
   p{
     font-family: "Oswald";
     margin-bottom: 0;
@@ -98,17 +130,21 @@ section{
      flex-direction: row;
      justify-content: space-between;
      align-items: center;
-
+     max-width: 100%;
+     img{
+       display: inline-block;
+       @media screen and(max-width: 576px){
+         display: none;
+       }
+     }
      .after_lunch__item__time{
        font-family: "Myriad Pro";
        font-size: 24px;
        font-weight: bold;
-     }
-
-     .after_lunch__item__photo{
-       background-color: black;
-       width: 170px;
-       height: 170px;
+       @media screen and(max-width: 576px){
+         text-align: center;
+         font-size: 40px;
+       }
      }
    }
 }
@@ -117,6 +153,14 @@ section{
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
+  div{
+    &:first-of-type{
+      @media screen and(max-width: 576px){
+        display: none;
+      }
+    }
+  }
+
   p {
     font-family: "Oswald";
     font-weight: lighter;
@@ -124,10 +168,16 @@ section{
     &:first-of-type {
       font-size: 24px;
       font-weight: bolder;
+      @media screen and(max-width: 576px){
+        font-size: 12px;
+      }
     }
 
     &:last-of-type {
       font-size: 18px;
+      @media screen and(max-width: 576px){
+       font-size: 10px;
+      }
     }
   }
 }
@@ -138,50 +188,20 @@ section{
     font-family: "Myriad Pro";
     font-weight: bold;
     font-size: 40px;
+    @media screen and(max-width: 768px){
+      font-size: 20px;
+    }
   }
   &__text{
     font-family: 'Oswald';
+/*    padding-top: 3rem;*/
+    @media screen and(max-width: 576px){
+      padding-top: 0;
+    }
     p{
       &:first-of-type{
         font-size:18px;
         font-weight: bolder;
-      }
-    }
-  }
-}
-@media screen and (min-width: 768px){
-   .after_lunch .after_lunch__photos .after_lunch__item__photo{
-    width: 200px;
-     height: 200px;
-  }
-
-}
-@media screen and (min-width: 576px){
-  .after_lunch .after_lunch__photos .after_lunch__item__photo{
-    width: 160px;
-    height: 160px;
-  }
-
-}
-@media screen and (max-width: 576px){
-  .after_lunch .after_lunch__photos .after_lunch__item__photo{
-    width: 50px;
-    height: 50px;
-  }
-  .timetable__photo{
-    width: 100px;
-    height: 100px;
-  }
-  .timetable__time{
-    font-size: 24px;
-    margin-top: 5px;
-  }
-  .timetable__name{
-  }
-  .after_lunch__line{
-    div{
-      &:before{
-        display: none;
       }
     }
   }
